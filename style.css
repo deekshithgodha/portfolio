@@ -95,7 +95,6 @@ body {
     margin: 20px;
     padding: 20px;
     width: 400px;
-    background-color: red;
 }
 
 .nani2 {
@@ -214,6 +213,10 @@ body {
     }
     .Services-card hover {
         background-color: yellow;
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 50px 20px;
+    }
     }
         
 }
