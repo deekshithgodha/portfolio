@@ -211,7 +211,7 @@ body {
     .sc-p, .nani2 {
         font-size: 14px;
     }
-    .Services-card hover {
+    .Services hover {
         background-color: yellow;
         border: 2px solid red;
         padding: 10px;
