@@ -95,6 +95,7 @@ body {
     margin: 20px;
     padding: 20px;
     width: 400px;
+    background-color: red;
 }
 
 .nani2 {
@@ -211,7 +212,7 @@ body {
     .sc-p, .nani2 {
         font-size: 14px;
     }
-    .Services-card:hover {
+    .Services-card hover {
         background-color: yellow;
     }
         
