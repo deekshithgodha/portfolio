@@ -212,7 +212,7 @@ body {
         font-size: 14px;
     }
     .Services-card hover {
-        background-color: yellow;
+        background-color: #7FFFD4;
         border: 2px solid red;
         padding: 10px;
         border-radius: 50px 20px;
