@@ -211,4 +211,8 @@ body {
     .sc-p, .nani2 {
         font-size: 14px;
     }
+    .Services-card:hover {
+        background-color: yellow;
+    }
+        
 }
