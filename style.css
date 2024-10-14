@@ -54,7 +54,9 @@ body {
 
 .home-right {
     width: 50vw;
-    padding-left: 200px;
+    padding-left: 100px;
+    width: 50px;
+    height: 100vh;
 }
 
 .nani {
