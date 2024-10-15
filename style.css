@@ -77,7 +77,7 @@ body{
 .Services-sub-cont{
     font-family: "Inconsolata", monospace;
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
    
 }
 .Services-card{
@@ -111,12 +111,6 @@ body{
    height: 50px;
 }
 .nanna{
-    width: 300px; 
-    height: auto;
-
-   
-}
-.iphone{
     width: 300px; 
     height: auto;
 }
