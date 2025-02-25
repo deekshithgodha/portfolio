@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,146 +6,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deekshith Portfolio</title>
     <link rel="icon" type="favicon.jsp" href="favicon.jsp.jpg">
+    <script src="https://kit.fontawesome.com/aa61d806c9.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
-body{
-    margin: 0px;
-    background-color: black;
-    color: white;
-}
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between ;
-    background-color: rgb(3, 3, 3);
-}
-.navbar-left{
-    padding-left: 50px;
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+        scroll-behavior: smooth;
     }
-.navbar-right{
-    padding-right: 20px;
-    display:flex;
-    flex-direction: row;
-    align-items:  center;
-}
-.a-element{ 
-    padding: 20px; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px ;
-    margin: 10px;
-    font-weight: bold;
-}
-.home{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-between;
-    height: 85vh;
-    width: 20vh;
-}
-.home-left{
-    width: 50vw;
-    text-align: left;
-    padding-left: 100px;
-}
-.logo-image{
-    height: 150px;
-    padding: 30px;
-    width: 200px;
-}
-.home-right {
-   
-    display: flex;              
-    justify-content: flex-end;  
-    align-items: center;       
-    height: 100vh;              
-    padding-right: 20px;
-}
-.nani{
-    font-family: "Merriweather", serif;
-    font-style: oblique;
-    color:lightpink;
+    
+    body {
+        background-color: #090000;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        background-color: white;
+        position: -webkit-sticky;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        height: 120px;
+    }
+    
+    .navbar-left .logo-image {
+        height: 100px;
+        border-radius: 10px;
+    }
+    
+    .navbar-right {
+        display: flex;
+        gap: 2rem;
+        font-size: 24px;
+    }
+    
+    .navbar-right a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    
+    .navbar-right a:hover {
+        color: #007bff;
+    }
+    
+    .home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8rem 5% 4rem;
+        min-height: 100vh;
+    }
+    
+    .home-left {
+        flex: 1;
+        padding-right: 2rem;
+    }
+    
+    .nani {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color:white;
+    }
+    
+    .para {
+        line-height: 1.6;
+        color: white;
+    }
+    
+    .home-right {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding-left: 20px;
+    }
+    
+    .hp {
+        width: 600px;
+        height: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px  white;
+        filter: grayscale(100%);
+    }
+    .hp:hover{
+        filter: grayscale(0%);   
+    }
+    
+    .buddi {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: white;
+        padding-top: 70PX;
+    }
+    
+    .Services-sub-cont {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 0 5% 4rem;
+    }
+    
+    .Services-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 10px 4px 8px white;
+        transition: transform 0.3s;
+    }
+    .Services-card:hover{
+        box-shadow: 10px 4px 8px aquamarine;
+    }
+    
+    .Services:hover {
+        transform: translateY(-5px);
+        color:black ;
 
-}
-.para{
-    font-family: "Edu TAS Beginner", cursive;
-    font-style: italic;
-    word-spacing: 2px;
-}
-.Services{
-    font-family: "Bebas Neue", sans-serif;
-    text-align: center;
-    padding: 30px;
-}
-.buddi{
-    color: rgba(8, 236, 8, 0.977);
-    font-family: "Rubik", sans-serif;
-    letter-spacing: 2px;
-    font-style: italic;
-    font-size: 40px;
-}
-.Services-sub-cont{
-    font-family: "Inconsolata", monospace;
-    display: flex;
-    flex-direction: row ;
-   
-}
-.Services-card{
-    font-family: "Inconsolata", monospace;
-    border: 2px green solid;
-    margin: 20px;
-    padding:20px;
-    width: 400px;
-
-}
-.nani2{
-    font-family: "Lora", serif;
-    font-size: 15px;
-}
-.sc-p{
-    font-family: "Inconsolata", monospace;
-    font-size: 15px;
-}
-.contact{
-    text-align: center;
-}
-.contact-info{
-    font-family: "Lora", serif;
-    font-size: 15px;
-}
-.social-icon-img{
-    padding: 20px;
-    height: 40px;
-}
-.test-logo{
-   height: 50px;
-}
-.hp{
-    width: 300px; 
-    height: auto;
-    padding-left: 70px;
-}
-.vinnu{
-    padding-right: 100px;
-    padding: 70px;
-
-}
-.koti{
-    padding-left: 50px;
-    padding-top: 10px;
-}
-.lucky{
-    padding: 100px;
-}
-    </style>
+    }
+    
+    .nani2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #007bff;
+    }
+    .nani2:hover {
+        font-size: 20px;
+       
+        color:red;
+    }
+    
+    .sc-p {
+        color: #666;
+        line-height: 1.6;
+    }
+    .sc-p-1{
+        color: #666;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+    
+    .vinnu {
+        width: 200px;
+        height: 200px;
+        margin: 1rem;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    
+    .vinnu:hover {
+        transform: scale(1.05);
+    }
+    
+    .test-logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+        object-fit: contain;
+    }
+    
+    .contact {
+        text-align: center;
+        background-color: white;
+        font-size: 18px;
+    }
+    
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+    
+    .contact-info p {
+        margin: 0.5rem 0;
+        color: #666;
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+    
+    @media (max-width: 768px) {
+        .home {
+            flex-direction: column;
+            padding-top: 6rem;
+        }
+    
+        .home-left, .home-right {
+            width: 100%;
+            padding: 0;
+        }
+    
+        .home-right {
+            margin-top: 2rem;
+        }
+    
+        .navbar-right {
+            gap: 1rem;
+        }
+    
+        .hp {
+            height: 200px;
+        }
+    
+        .nani {
+            font-size: 2rem;
+        }
+    
+        .buddi {
+            font-size: 2rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .navbar {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    
+        .navbar-right {
+            margin-top: 1rem;
+        }
+    
+        .home {
+            padding-top: 8rem;
+        }
+    
+        .hp {
+            height: 150px;
+        }
+    }
+</style>
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-left">
-            <img class="logo-image" src="./WhatsApp_Image_2024-05-30_at_21.47.59_627d4b28-removebg-preview.png">
+            <img class="logo-image" src="logopic.webp">
         </div>
         <div class="navbar-right">
             <a class="a-element" href="#home">Home</a>
@@ -159,12 +264,11 @@ body{
             <p class="para">I'm a Wordpress Developer with industry experience building websites and web application. I'm specialised in Wordpress ,Elementor, and Woocommerce and have professional experience working with WordPress and Woocommerce. I'm also experienced working with digital marketing , social media marketing and SEO. I can grasp concepts quickly and I'm keen to learn something new , recently I have acquired knowledge in HTML,CSS and JavaScript. I check out locations when I have some spare time </p>
             </div>
     <div class="home-right">
-        <img class="hp" src="beach.jpg" alt="my logo">
-        <img class="hp" src="temple..jpg" alt="my logo">
+        <img class="hp" src="DKPIC.jpg" alt="my logo">
     </div>
-    </div>
+</div>
     <div class="Services" id="services">
-    <h1 class="buddi"> SERVICES WE OFFER</h1>
+    <h1 class="buddi"> SKILLS</h1>
     <div class="Services-sub-cont">
         <div class="Services-card">
         <h1 class="nani2">Web Designing</h1>
@@ -187,22 +291,22 @@ body{
     <a href="https://drive.google.com/file/d/1CfYK-sDoES1P-wjpTc7YrRsQoMjdvXm0/view?usp=sharing"><img class="vinnu" src="data:image/png;base64,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"></a>
    </div>
     <div class="Services">
-        <h1 class="buddi">TESTMONIALS</h1>
+        <h1 class="buddi">SOCIAL MEDIA</h1>
         <div class="Services-sub-cont">
             <div class="Services-card">
             <h1 class="nani2">GOOGLE</h1>
             <img src="./google.png" class="test-logo">
-            <p class="sc-p">Hi dudes Its my google account godhadeekshith799@gmail.com</p>
+            <p class="sc-p-1">Hi dudes Its my google account godhadeekshith799@gmail.com</p>
         </div>
         <div class="Services-card">
             <h1 class="nani2">FACEBOOK</h1>
             <img src="./facebook.jpeg" class="test-logo">
-            <p class="sc-p">Hello guys Its my facebook account godha deekshith</p>
+            <p class="sc-p-1">Hello guys Its my facebook account godha deekshith</p>
         </div>
         <div class="Services-card">
             <h1 class="nani2">INSTAGRAM</h1>
             <img src="./instagram.jpg" class="test-logo">
-            <p class="sc-p">Hello Buddys Its my insta ID deekshith_godha</p>
+            <p class="sc-p-1">Hello Buddys Its my insta ID deekshith_godha</p>
         </div>
     </div>
 </div>
@@ -212,25 +316,15 @@ body{
             <p class=>DEEKSHITH GODHA</p>
             <p>+91 601072451</p>
              <a href="https://mail.google.com/mail/u/0/#inbox"<p>godhadeekshith799@gmail.com</p></a>
-                </div>
-        <div class="social-icons">
-            <div class="social-icon">
-               <a href="https://www.instagram.com/deekshith_godha?igsh=MWd3c2l2Zm50Ymc4cA=="> 
-               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-              </svg>       
-               </a>
-         <a href="https://www.linkedin.com/in/deekshith Nagaprasanna Godha">
-               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                  </svg> </a>           
-               <a href="https://www.youtube.com/channel/UCj-m8zlBLHsgPVSS5nPC9TQ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                  </svg>         
-               </a>
-             </div>  
         </div>
-    </div>
+
+        <div class="social-icon">
+            <a href="https://www.linkedin.com/in/deekshith-nagaprasanna-goda-1593462b5"><i class="fa-brands fa-linkedin fa-xl" style="color: #128be7;"></i>
+
+            <a href="https://www.instagram.com/deekshith_godha?igsh=MWpuNXV3YzUxMmpodw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram fa-xl" style="color: #fc73f1;"></i></a>
+            
+            <a href="https://www.facebook.com/share/19uD4VbDMo/?mibextid=wwXIfr"><i class="fa-brands fa-facebook fa-xl" style="color: #74C0FC;"></i></a>
+         </div>
+    </div>        
 </body>
 </html>
