@@ -1,3 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deekshith Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.jsp.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+        body {
+            margin: 0;
+            background-color: rgba(171, 178, 177, 0.123);
+            color: rgb(203, 102, 180);
+            font-family: 'Edu TAS Beginner', cursive;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(74, 117, 196, 0.8);
+            padding: 15px 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-left img {
+            height: 60px;
+        }
+        .navbar-right {
+            display: flex;
+        }
+        .a-element {
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .a-element:hover {
+            background-color: rgba(203, 102, 180, 0.7);
+            border-radius: 5px;
+        }
+        .home {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            height: 85vh;
+        }
+        .home-left {
+            width: 50%;
+            padding-left: 50px;
+        }
+        .logo-image {
+            height: 80px;
+        }
+        .home-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+        .hp {
+            width: 300px;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .nani {
+            font-family: "Merriweather", serif;
+            font-style: oblique;
+            color: lightpink;
+            font-size: 36px;
+        }
+        .para {
+            font-style: italic;
+            word-spacing: 2px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .Services {
+            text-align: center;
+            padding: 30px;
+        }
+        .buddi {
+            color: rgba(8, 236, 8, 0.977);
+            font-family: "Rubik", sans-serif;
+            letter-spacing: 2px;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .Services-sub-cont {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .Services-card {
+            background-color: white;
+            border: 2px solid green;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .Services-card:hover {
+            transform: scale(1.05);
+        }
+        .nani2 {
+            font-family: "Lora", serif;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .sc-p {
+            font-family: "Inconsolata", monospace;
+            font-size: 14px;
+        }
+        .contact {
+            text-align: center;
+            padding: 50px;
+        }
+        .contact-info {
+            font-family: "Lora", serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .social-icon-img {
+            padding: 10px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        .social-icon-img:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .home {
+                flex-direction: column;
+                height: auto;
+            }
+            .home-left, .home-right {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
+            .hp {
+                width: 80%;
+                margin: 10px 0;
+            }
+            .Services-sub-cont {
+                flex-direction: column;
+                align-items: center;
+            }
+            .Services-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img class="logo-image" src="./WhatsApp_Image_2024-05-30_at_21.47.59_627d4b28-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="navbar-right">
+            <a class="a-element" href="#home">Home</a>
+            <a class="a-element" href="#about">About</a>
+            <a class="a-element" href="#services">Services</a>
+            <a class="a-element" href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="home" id="home">
+        <div class="home-left">
+            <h1 class="nani">DEEKSHITH GODHA</h1>
+            <p class="para">I'm a Wordpress Developer with industry experience building websites and web applications. I'm specialized in Wordpress, Elementor, and Woocommerce and have professional experience working with WordPress and Woocommerce. I'm also experienced in digital marketing, social media marketing, and SEO. I can grasp concepts quickly and I'm keen to learn something new; recently, I have acquired knowledge in HTML, CSS, and JavaScript. I check out locations when I have some spare time.</p>
+        </div>
+        <div class="home-right">
+            <img class="hp" src="beach.jpg" alt="Beach">
+            <img class="hp" src="temple.jpg" alt="Temple">
+        </div>
+    </div>
+    <div class="Services" id="services">
+        <h1 class="buddi">SERVICES WE OFFER</h1>
+        <div class="Services-sub-cont">
+            <div class="Services-card">
+                <h1 class="nani2">Web Designing</h1>
+                <p class="sc-p">I'm a positive, enthusiastic, and competent Web Developer. I've acquired skills over the course of the year and built up a diverse range of skills, qualities, and attributes that assure my ability to excel in this position.</p>
+            </div>
+            <div class="Services-card">
+                <h1 class="nani2">Video Editing</h1>
+                <p class="sc-p">I'm Deekshith Godha, a dedicated video creator with two years of experience in crafting high-quality, engaging content for platforms such as YouTube, TikTok, Instagram, and more.</p>
+            </div>
+            <div class="Services-card">
+                <h1 class="nani2">Photoshop</h1>
+                <p class="sc-p">I'm Deekshith Godha, a dedicated and skilled Photoshop expert with a year of experience in creating stunning visual content. My proficiency with Adobe Photoshop spans across various areas such as photo retouching, compositing, graphic design, and digital illustration.</p>
+            </div>
+        </div>
     </div>
     <div class="contact" id="contact">
         <h1 class="buddi">CONTACT US</h1>
